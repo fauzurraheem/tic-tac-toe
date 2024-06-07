@@ -1,0 +1,86 @@
+Installing and Using Python on Ubuntu: A Guided Tutorial
+PythonistaSage
+PythonistaSage
+
+·
+Follow
+
+3 min read
+·
+Mar 2, 2023
+236
+
+
+4
+
+
+
+
+
+Python is a powerful and versatile programming language used in a variety of fields, from web development to scientific computing. If you’re using Ubuntu and want to install and use Python, this tutorial will walk you through the process.
+
+
+Python running on Ubuntu.
+Step 1: Checking for Python
+Before installing Python, it’s a good idea to check if it’s already installed on your system. Open the terminal on your Ubuntu system and type:
+
+python3 --version
+This will show you the version of Python 3 installed on your system. If you see an output like “Python 3.x.x”, you can skip to Step 3. If not, proceed to Step 2.
+
+Step 2: Installing Python
+To install Python on Ubuntu, open the terminal and type the following command:
+
+sudo apt-get update
+This will update the package list on your system. Then, type the following command to install Python:
+
+sudo apt-get install python3
+This will install Python 3 on your system. Once the installation is complete, check the Python version again using the command in Step 1.
+
+Step 3: Installing pip
+Pip is a package manager for Python that allows you to easily install and manage Python packages. To install pip on Ubuntu, open the terminal and type the following command:
+
+sudo apt-get install python3-pip
+This will install pip for Python 3 on your system. To verify the installation, type the following command:
+
+pip3 --version
+This should show you the version of pip installed on your system.
+
+Step 4: Installing Packages with pip
+Now that you have pip installed, you can use it to install packages for Python. To install a package, open the terminal and type the following command:
+
+pip3 install package-name
+Replace “package-name” with the name of the package you want to install. For example, to install the NumPy package for scientific computing, type the following command:
+
+pip3 install numpy
+This will install the NumPy package on your system. You can install other packages in the same way.
+
+Step 5: Creating a Virtual Environment
+It’s a good practice to create a virtual environment for your Python projects. This allows you to isolate your project dependencies from the system Python installation. It is important to note that running pip as the ‘root’ user can result in broken permissions and conflicting behavior with the system package manager. Creating a virtual environment helps avoid these issues. To create a virtual environment, open the terminal and navigate to your project directory.
+
+Then, type the following command:
+
+python3 -m venv myenv
+This will create a virtual environment named “myenv” in your project directory. You can activate the virtual environment by typing the following command:
+
+source myenv/bin/activate
+This will activate the virtual environment and you can install packages specific to your project without affecting the system Python installation.
+
+Step 6: Running a Python Script
+To run a Python script, open the terminal and navigate to the directory where your script is located. Then, type the following command:
+
+python3 my_script.py
+Replace “my_script.py” with the name of your Python script. This will run your script using the system Python installation. If you want to run the script using the virtual environment, activate the virtual environment first (as shown in Step 5) and then run the script using the same command.
+
+Step 7: Close the environment
+To exit the virtual environment “myenv”, you can simply type:
+
+deactivate
+This will deactivate the current virtual environment and return you to the system’s default Python installation.
+
+I hope this tutorial helps you install and use Python on Ubuntu with ease. If you have any further questions or run into any issues, feel free to ask.
+
+Stay tuned for Part II of this tutorial, where we’ll explore some more intermediate-level commands for working with Python on Ubuntu, including virtual environments, package management, and more advanced debugging techniques.
+
+References:
+Python official documentation: https://docs.python.org/
+Ubuntu official documentation: https://help.ubuntu.com/
